@@ -1,0 +1,24 @@
+{
+  "name": "perkchain-option-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PerkChain loyalty rewards app with Express, SQLite, MetaMask and an ERC-721 testnet contract",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.26.3",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0"
+  }
+}
